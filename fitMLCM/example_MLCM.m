@@ -1,3 +1,15 @@
+function example_MLCM
+%example_MLCM
+%
+% Solves the MLCM scales for the example dataset, BumpyGlossy.csv
+%
+% For reference, please see Chapter 8 of Knoblauch and Maloney, 2012
+% ===============================================================
+% Code by: Joshua Harvey, University of Oxford (UK)
+% joshua.harvey@pmb.ox.ac.uk
+% ===============================================================
+
+% read in data
 bg = csvread('BumpyGlossy.csv',1,1);
 StimList = bg(:,2:5);
 StimList = StimList(:,[2 1 4 3]); % seems to be incorrect order in the original data
@@ -46,3 +58,5 @@ errorbar(BmnA(1,1:end),BsdA(1,1:end)), hold on
 
 subplot(1,3,3)
 errorbar(BmnI(1:end,1),BsdI(1:end,1)), hold on
+
+end
