@@ -35,16 +35,16 @@ if display
 	figure(1)
 	set(gcf,'Color','w')
 	subplot(1,3,1:2)
-	plot(psis,'o-','LineWidth',2);
+	plot(psit,'o-','LineWidth',2);
 	title('Difference scale')
 	ylim([0 1])
-	xlim([0.9 length(psis)+0.1])
+	xlim([0.9 length(psit)+0.1])
 	set(gca,'LineWidth',1)
 	set(gca,'FontSize',16)
 	axis square
 	drawnow;
 	subplot(1,3,3)
-	plot(lsig,'o','LineWidth',2);
+	plot(esig,'o','LineWidth',2);
 	title('Sigma')
 	ylim([-.5 1.5])
 	set(gca,'LineWidth',1)
